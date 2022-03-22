@@ -1,0 +1,41 @@
+.project {
+    padding: 100px 0;
+    background-color: $bggrey;
+    &__line {
+        @include flex(space-between,center);
+        flex-direction: column;
+    }
+    &__title {
+        @include fonts($fstitle,$black-color);
+        font-weight: $fwtitle;
+        line-height: 1.47;
+        text-align: center;
+        margin-bottom: 50px;
+
+        @media (max-width: $md-max) {
+            font-size: $fstitle-mobile;   
+        }
+    }
+    &__text {
+        @include fonts($fstext,$light-color);
+        line-height: 1.56;
+        max-width: 730px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    &__images {
+        @include flex(space-between, center);
+        gap: 30px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+
+        @media (max-width: $xl-min) {
+            justify-content: space-evenly;
+        }
+
+        &__img {
+            flex-basis: 350px;
+        }
+    }
+    
+}

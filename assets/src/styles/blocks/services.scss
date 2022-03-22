@@ -1,0 +1,73 @@
+.services {
+    padding: 110px 0;
+    &__line {
+        @include flex(space-between,center);
+        flex-direction: column;
+    }
+    &__title {
+        @include fonts($fstitle,$dark-color);
+        font-weight: $fwtitle;
+        line-height: 1.47;
+        max-width: 740px;
+        text-align: center;
+        margin-bottom: 50px;
+
+        @media (max-width: $xl-min) {
+            font-size: $fstitle-mobile;
+        }
+    }
+    &__text {
+        @include fonts($fstext,$light-color);
+        line-height: 1.56;
+        max-width: 730px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    &__block {
+        @include flex(space-between, center);
+        gap: 15px;
+        margin-bottom: 70px;
+        flex-wrap: wrap;
+
+        @media (max-width: $xl-min) {
+            justify-content: space-evenly;
+        }
+    }
+    &__article {
+        @include flex(space-between, center);
+        flex-basis: 350px;
+    }
+    &__circle-big {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        border: 1px solid #E0E0E0;
+        padding: 10px;
+    }
+    &__circle-small {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 1px solid #4985FF;
+        position: relative;
+    }
+    &__article-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__article-content {
+        margin-left: 17px;
+    }
+    &__article-title {
+        @include fonts($fwsubtitle,$black-color);
+        font-weight: $fwsubtitle;
+        line-height: 1.22;
+        margin-bottom: 12px;
+    }
+    &__article-text {
+        @include fonts(14px,$light-color);
+        line-height: 1.57;
+    }
+}

@@ -1,0 +1,117 @@
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #A1A1A1;
+    background-color: $dark-color;
+    transition: background-color .3s;
+    &--transparent {
+        background-color: transparent;
+    }
+    &__menu {
+        @include flex(end,center);
+        gap: 40px;
+        padding: 40px 0;
+
+        @media (max-width: $sm-max) {
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+            top: 100px;
+            bottom: 0;
+            left: 150px;
+            right: 0;
+            background-color: #fff;
+            z-index: 9;
+            box-shadow:  0 2px 4px rgba(0, 0, 0, .25);
+            display: block;
+        } 
+    }
+
+    &__list {
+        @media (max-width: $sm-max) {
+            margin-bottom: 40px;
+            padding-left: 20px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        @include fonts($fstext,$wight-color);
+        font-weight: $fw;
+        line-height: 1.2;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -39px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: width .3s;
+        }
+        &--current:after,
+        &:hover:after {
+            width: 100%;
+        } 
+        @media (max-width: $sm-max) {
+            @include fonts($fssubtitle,$black-color);
+        }
+
+    }
+    &__btn {
+        border: 1px solid #fff;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        position: relative;
+        margin: 30px 30px 30px 0;
+        left: 90%;
+
+        @media (min-width: $md-min) {
+            display: none;
+        }
+    }
+
+    &__btn:hover &__btn-line:nth-child(1) {
+        transform: translateX(-50%) rotate(45deg);
+        top: 18px;
+    }
+    &__btn:hover &__btn-line:nth-child(2) {
+        opacity: 0;     
+    }
+    &__btn:hover &__btn-line:nth-child(3) {
+        transform: translateX(-50%) rotate(-45deg);
+        top: 19px;  
+    }
+
+    &__btn-line {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__btn-line:nth-child(1) {
+        top: 8px;
+        transition: transform .3s, top .3s;
+    }
+
+    &__btn-line:nth-child(2) {
+        top: 19px;
+        transition: opacity .3s;
+    }
+
+    &__btn-line:nth-child(3) {
+        top: 29px;
+        transition: transform .3s, top .3s;
+    }
+    
+}

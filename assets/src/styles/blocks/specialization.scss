@@ -1,0 +1,32 @@
+.specialization {
+    padding: 100px 0 300px;
+    background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+    &__line {
+        @include flex(space-between,center);
+
+        @media (max-width: $xl-min) {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: $md-min) {
+            display: block;
+            text-align: center;
+        }
+    }
+    &__title {
+        @include fonts($fstitle,$wight-color);
+        font-weight: $fwtitle;
+        line-height: 1.47;
+
+        @media (max-width: $xl-min) {
+            font-size: $fstitle-mobile;   
+        }
+    }
+    &__btn {
+
+        @media (max-width: $md-min) {
+            margin-top: 30px;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.development {
+    padding: 100px 0 70px;
+    background-color: $bggrey;
+    &__line {
+        @include flex(space-between,center);
+        gap: 100px;
+        margin-bottom: 80px;
+
+        @media (max-width: $xl-min) {
+            display: block;
+            text-align: center;
+        }
+    }
+    &__title {
+        @include fonts($fstitle,$dark-color);
+        font-weight: $fwtitle;
+        line-height: 1.47;
+        margin-bottom: 40px;
+
+        @media (max-width: $xl-min) {
+            font-size: $fstitle-mobile;   
+        }
+    }
+    &__text {
+        @include fonts($fstext,$light-color);
+        line-height: 1.56;
+        margin-bottom: 30px;
+
+        @media (max-width: $xl-min) {
+            max-width: 750px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        
+    }
+    &__link {
+        @include fonts($fstext,$accent-color);
+        line-height: 1.25; 
+    }
+
+    &__content {
+
+        @media (max-width: $xl-min) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__blocks {
+        @include flex(space-between,center);
+        padding: 70px 40px 0;
+        gap: 90px;
+        flex-wrap: wrap;
+
+        @media (max-width: $xl-min) {
+            justify-content: space-evenly;
+        }
+    }
+    &__block {
+        flex-basis: 104px;
+
+        @media (max-width: $xl-min) {
+            flex-basis: 150px;
+        }
+       
+    }
+    &__block-number {
+        @include fonts($fstitle,$black-color);
+        line-height: 1.47;
+        text-align: right;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            background-image: url(../assets/src/image/web-programming.png);
+        }
+
+        @media (max-width: $xl-min) {
+            text-align: center;
+        }
+    }
+    &__block-text {
+        @include fonts($fstext,$light-color);
+        line-height: 1.56;
+    }
+}

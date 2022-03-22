@@ -1,0 +1,30 @@
+
+.first-screen {
+    min-height: 900px;
+    padding-top: 320px;
+    background: url(../assets/src/image/fs_bg.png) no-repeat center center;
+    background-size: cover;
+    &__line {
+        @include flex(flex-start,center);
+        flex-direction: column;
+    }
+    &__subtitle {
+        @include fonts($fstext,$wight-color);
+        font-weight: $fw; 
+    }
+    &__title {
+        @include fonts(48px,$wight-color);
+        font-weight: 800;
+        line-height: 1.3;
+        margin-top: 20px;
+        text-align: center;
+
+        @media (max-width: $xl-min) {
+            font-size: $fstitle;
+            font-weight: $fwtitle; 
+        }
+    }
+    &__btn {
+        margin-top: 50px;
+    }
+}

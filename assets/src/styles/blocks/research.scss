@@ -1,0 +1,34 @@
+.research {
+    padding-bottom: 85px;
+    &__line {
+        @include flex(space-between,center);
+        gap: 30px;
+        margin-bottom: 85px;
+        margin-top: -230px;
+        flex-wrap: wrap;
+
+        @media (max-width: $xl-min) {
+            justify-content: space-evenly;
+        }
+    }
+
+    &__article {
+        flex-basis: 350px;
+    }
+
+    &__subtitle {
+        @include fonts($fwsubtitle,$black-color);
+        font-weight: $fwsubtitle;
+        line-height: 1.22;
+        margin-top: 30px;
+    }
+    &__text {
+        @include fonts($fstext,$light-color);
+        line-height: 1.56;
+        margin: 30px 0;
+    }
+    &__link {
+        @include fonts($fstext,$accent-color);
+        line-height: 1.25;
+    }
+}

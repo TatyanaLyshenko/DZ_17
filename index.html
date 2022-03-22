@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <title>Верстка макета вместе с адаптивом</title>
+</head>
+<body>
+    <header class="header header--transparent">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__list">
+                        <a class="header__link header__link--current" href="#">Главная</a>  
+                    </li>
+                    <li class="header__list">
+                        <a class="header__link" href="#">Наши проекты</a>  
+                    </li>
+                    <li class="header__list">
+                        <a class="header__link" href="#">Услуги</a>  
+                    </li>
+                    <li class="header__list">
+                        <a class="header__link" href="#">Новости</a>  
+                    </li>
+                    <li class="header__list">
+                        <a class="header__link" href="#">Контакты</a>  
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__btn" type="button">
+                <span class="header__btn-line"></span>
+                <span class="header__btn-line"></span>
+                <span class="header__btn-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="first-screen">
+            <div class="container">
+                <div class="first-screen__line">
+                    <h3 class="first-screen__subtitle">Передовая IT студия</h3>
+                    <h1 class="first-screen__title">Мы создаем легкие решения сложных задач и проблем</h1>
+                    <button class="first-screen__btn btn" type="button">Наши проекты</button>
+                </div>            
+            </div>   
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="services__line">
+                    <h2 class="services__title">Мы создаем мобильные приложения для крупных корпораций</h2>
+                    <p class="services__text">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+                        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                    <div class="services__block">
+                        <article class="services__article">
+                            <div class="services__circle-big">
+                                <div class="services__circle-small">
+                                    <img class="services__article-img" src="./assets/src/image/website.png" alt="website">
+                                </div>
+                            </div>
+                            <div class="services__article-content">
+                                <h3 class="services__article-title">Создание сайтов</h3>
+                                <p class="services__article-text">
+                                    Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.
+                                </p>
+                            </div>                   
+                        </article>
+                        <article class="services__article">
+                            <div class="services__circle-big">
+                                <div class="services__circle-small">
+                                    <img class="services__article-img" src="./assets/src/image/website.png" alt="website">
+                                </div>
+                            </div>
+                            <div class="services__article-content">
+                                <h3 class="services__article-title">Создание сайтов</h3>
+                                <p class="services__article-text">
+                                    Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.
+                                </p>
+                            </div>                   
+                        </article>
+                        <article class="services__article">
+                            <div class="services__circle-big">
+                                <div class="services__circle-small">
+                                    <img class="services__article-img" src="./assets/src/image/website.png" alt="website">
+                                </div>
+                            </div>
+                            <div class="services__article-content">
+                                <h3 class="services__article-title">Создание сайтов</h3>
+                                <p class="services__article-text">
+                                    Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.
+                                </p>
+                            </div>                   
+                        </article>
+                    </div>
+                    <button class="services__btn btn" type="button">Все услуги</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="development">
+            <div class="container">
+                <div class="development__line">
+                    <div class="development__content">
+                        <h2 class="development__title">Высокие стандарты разработки</h2>
+                        <p class="development__text">
+                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.  
+                            стандартной "рыбой" для текстов на латинице с начала XVI века. 
+                        </p>
+                        <a class="development__link" href="">Подробнее о компании</a>
+                    </div>
+                    <div class="development__image">
+                        <img class="development__img" src="./assets/src/image/standards.png" alt="standard">
+                    </div>
+                </div>
+                <hr class="development__straight straight">
+                <div class="development__blocks">
+                    <div class="development__block">
+                        <p class="development__block-number">125</p>
+                        <p  class="development__block-text">Our projects</p>
+                    </div>
+                    <div class="development__block">
+                        <p class="development__block-number">125</p>
+                        <p  class="development__block-text">Our projects</p>
+                    </div>
+                    <div class="development__block">
+                        <p class="development__block-number">125</p>
+                        <p  class="development__block-text">Our projects</p>
+                    </div>
+                    <div class="development__block">
+                        <p class="development__block-number">125</p>
+                        <p  class="development__block-text">Our projects</p>
+                    </div>
+                    <div class="development__block">
+                        <p class="development__block-number">125</p>
+                        <p  class="development__block-text">Our projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="specialization">
+            <div class="container">
+                <div class="specialization__line">
+                    <h2 class="specialization__title">Наши работы, на которых мы специализируемся</h2>
+                    <button class="specialization__btn btn" type="button">Все услуги</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="research">
+            <div class="container">
+                <div class="research__line">
+                    <article class="research__article">
+                        <img class="research__img" src="./assets/src/image/specialization.png" alt="specialization">
+                        <h4 class="research__subtitle">Исследование и упаковка</h4>
+                        <p class="research__text">
+                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        </p>
+                        <a class="research__link" href="#">Подробнее</a>
+                    </article>
+                    <article class="research__article">
+                        <img class="research__img" src="./assets/src/image/specialization.png" alt="specialization">
+                        <h4 class="research__subtitle">Исследование и упаковка</h4>
+                        <p class="research__text">
+                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        </p>
+                        <a class="research__link" href="#">Подробнее</a>
+                    </article>
+                    <article class="research__article">
+                        <img class="research__img" src="./assets/src/image/specialization.png" alt="specialization">
+                        <h4 class="research__subtitle">Исследование и упаковка</h4>
+                        <p class="research__text">
+                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        </p>
+                        <a class="research__link" href="#">Подробнее</a>
+                    </article>
+                </div>
+                <hr class="research__straight straight">
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="container">
+                <div class="project__line">
+                    <h2 class="project__title">Наши проекты</h2>
+                    <p class="project__text">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+                        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
+                    </p>
+                    <div class="project__images">
+                        <div class="project_img">
+                            <img src="./assets/src/image/projects.png" alt="project">
+                        </div>
+                        <div class="project_img">
+                            <img src="./assets/src/image/projects.png" alt="project">
+                        </div>
+                        <div class="project_img">
+                            <img src="./assets/src/image/projects.png" alt="project">
+                        </div>
+                        <div class="project_img">
+                            <img src="./assets/src/image/projects.png" alt="project">
+                        </div>
+                    </div>
+                    <button class="project__btn btn" type="button">Все проекты</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__line">
+            <hr class="footer__straight straight">
+            <p class="footer__text">(с) 2019. Все права защищены.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+
+
